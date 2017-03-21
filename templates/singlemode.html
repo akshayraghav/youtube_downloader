@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Youtube Video Downloader!</title>
+	<link rel="icon" href="images.jpg">
+	<style>
+
+		body {
+			background-color:#333333;
+			color:white;
+		}
+		#titl{
+			background-color:black;
+			text-align:center;
+			color:#33FFFF;
+			font-family:ar bonnie;
+			font-size:60px;
+		}
+
+		#face{
+			position:absolute;
+			top:100px;
+			left:500px;
+			text-align:center;
+			color:#66FFFF;
+			font-family:Segoe Print;
+			font-size:80px;
+		}
+
+		#tag{
+			position:absolute;
+			top:215px;
+			left:850px;
+			text-align:right;
+			color:#66FFFF;
+			font-family:Segoe Print;
+			font-size:20px;
+		}
+
+		#designer{
+			position:absolute;
+			top:93%;
+			left:43%;
+			color:white;
+			text-align:center;
+			font-size:13px;
+			font-family:Californian FB;
+		}
+
+		#urlform{
+			position:absolute;
+			top:300px;
+			left:280px;
+			color:white;
+			font-size: 20px;
+			font-family:Maiandra GD;
+		}
+
+		#instr{
+			padding:20px;
+			background-color:#FF6600;
+			border-radius: 15px;
+			border: 3px solid white;
+			position:absolute;
+			top:380px;
+			left:300px;
+			color:white;
+			font-size: 20px;
+			font-family:Maiandra GD;
+		}
+
+		#lside{
+			position:absolute;
+			left:0;
+			top:0;
+			height:100%;
+			width:200px;
+			background-color:black;
+		}
+
+		#rside{
+			position:absolute;
+			right:0;
+			top:0;
+			height:100%;
+			width:200px;
+			background-color:black;
+		}
+	</style>
+</head>
+
+<body>
+	<hr />
+
+
+	{% if eval==1: %}
+	<script>
+		alert("Invalid URL or Video isn't avialable to be downloaded!");
+	</script>
+	{% endif %}
+
+	<div id="titl">
+		The Youtube Video Downloader
+	</div>
+	<hr />
+
+	<div id="lside"></div>
+	<div id="rside"></div>
+
+	<div id="face">Hi Youtuber!</div>
+	<div id="tag">- A Python based Application.</div>
+
+	<div id="urlform">
+		<form action='http://127.0.0.1:5000/work' method='POST'>
+			Enter the Url to download from: <input type="text" style="font-size:10pt;height:23px" name="url" value=" Enter the URL here" size="95">
+			<input type="Submit" style="font-size:13pt;height:24px" value="Submit">
+		</form>
+	</div>
+
+	<div id="instr">
+		<p>1)Enter the url of the video in the above url form.<br/><br/>
+			2)Hit the Submit Button to view and select among all the available formats of the video.<br/><br/>
+			3)After you hit the "Submit button", Choose the format that you want from the list that would appear.<br/><br/>
+			4)Hit "Download" button and there you go!
+		</p>
+
+	</div>
+
+	<div id="designer">Designed by: Akshay Singh Raghav <br/> Electronics Undergrad, N.I.T. Jalandhar. <br/> E-mail: akshaysr.ec.14@nitj.ac.in</div>
+
+</body>
+</html>
