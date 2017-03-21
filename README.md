@@ -27,7 +27,7 @@ Using Flask Framework and pytube library for Python
 <li>Hit "Download".</li>
 <li>You will be directed to another page when the video will be downloaded completely.</li>
 
-<br><img src="https://raw.githubusercontent.com/akshayraghav/youtube_downloader/master/static/screenshots/homepage.png"><br>
-<br><img src="https://raw.githubusercontent.com/akshayraghav/youtube_downloader/master/static/screenshots/step2.png"><br>
-<br><img src="https://raw.githubusercontent.com/akshayraghav/youtube_downloader/master/static/screenshots/step3.png"><br>
-<br><img src="https://raw.githubusercontent.com/akshayraghav/youtube_downloader/master/static/screenshots/final.png"><br>
+<br><img src="https://raw.githubusercontent.com/akshayraghav/youtube_downloader/master/homepage.PNG"><br>
+<br><img src="https://raw.githubusercontent.com/akshayraghav/youtube_downloader/master/step2.PNG"><br>
+<br><img src="https://raw.githubusercontent.com/akshayraghav/youtube_downloader/master/step3.PNG"><br>
+<br><img src="https://raw.githubusercontent.com/akshayraghav/youtube_downloader/master/final.PNG"><br>
