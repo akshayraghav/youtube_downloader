@@ -30,8 +30,8 @@ def fetch(url):
         return yt.get_videos()
 
 @app.route('/')
-def singlemode():
-    return render_template("singlemode.html")
+def renderHomePage():
+    return render_template("index.html")
 
 
 
@@ -45,14 +45,14 @@ def work():
         if y in url_dw:
             list=fetch(url_dw)
             if list==-1:
-                return render_template('singlemode.html', eval=1)
+                return render_template('index.html', eval=1)
             p=len(list)
             rng=[]
             for k in range(p):
                 rng.append(k)
-            return render_template('singlemode_down.html', packet=zip(list,rng))
+            return render_template('download.html', packet=zip(list,rng))
         else:
-            return render_template('singlemode.html',eval=1)
+            return render_template('index.html',eval=1)
 
 
 @app.route('/success')
@@ -60,7 +60,7 @@ def success():
     global video
     render_template('success.html')
     video.download("F:/Pytube downloads/")
-    return redirect(url_for('singlemode'))
+    return redirect(url_for('renderHomePage'))
 
 
 @app.route('/receive', methods=['POST','GET'])
@@ -72,13 +72,13 @@ def receive():
     try:
         choice = int(request.form['category'])
     except Exception:
-        return render_template('singlemode_down.html',packet=zip(list,rng),eval=1)
+        return render_template('download.html',packet=zip(list,rng),eval=1)
     else:
         video=list[choice]
         try:
             save_at=request.form['save_at']
             if save_at=='':
-                return render_template('singlemode_down.html',packet=zip(list,rng),eval=2)
+                return render_template('download.html',packet=zip(list,rng),eval=2)
             video.download(save_at)
         except Exception:
             num=str(random.randrange(1,10))
